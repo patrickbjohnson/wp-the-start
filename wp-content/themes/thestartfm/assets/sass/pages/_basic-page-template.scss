@@ -1,0 +1,35 @@
+/**
+ * Block: basic-page
+ * Element: basic-page__element
+ * Modifier: basic-page--modifier
+ */
+$block: basic-page;
+
+
+.#{$block} {
+	&__hero {
+		position: relative;
+		max-width: 1300px;
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	&__title {
+		font-size: rem(26);
+		margin-top: 50px;
+		margin-bottom: 50px;
+		text-align: center;
+		text-transform: uppercase;
+	}
+
+	&__content {
+		font-size: rem(18);
+
+		@media (min-width: 800px) {
+			margin-left: 25px;
+			margin-right: 25px;
+			font-size: rem(22);
+		}
+	}
+}

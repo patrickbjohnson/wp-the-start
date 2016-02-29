@@ -1,0 +1,25 @@
+/**
+ * Block: shownotes
+ * Element: shownotes__element
+ * Modifier: shownotes--modifier
+ */
+
+$block: shownotes;
+.shownotes {
+	&__title {
+		font-size: rem(16);
+		display: inline-block;
+		width: auto;
+		margin: 0 auto 15px;
+		font-weight: bold;
+		text-transform: uppercase;
+		border-bottom: 2px solid #424242;
+	}
+
+	&__item-link {
+		display: block;
+		margin-top: 5px;
+		margin-bottom: 5px;
+		text-decoration: none;
+	}
+}

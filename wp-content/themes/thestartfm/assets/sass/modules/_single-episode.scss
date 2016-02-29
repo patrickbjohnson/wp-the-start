@@ -1,0 +1,84 @@
+/**
+ * Block: single-episode
+ * Element: single-episode__element
+ * Modifier: single-episode--modifier
+ */
+
+$block: single-episode;
+.single-episode {
+	&__hero {
+		position: relative;
+		max-width: 1300px;
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+
+		img {
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		.site-logo {
+			position: absolute;
+		}
+	}
+
+	&__header {
+		margin-top: 40px;
+		margin-bottom: 40px;
+		text-align: center;
+
+		&-links {
+			padding: 0;
+			margin-top: 15px;
+			margin-bottom: 0;
+		}
+
+		&-links-item {
+			display: inline-block;
+			margin-left: 5px;
+			margin-right: 5px;
+		}
+
+		&-links-link {
+			display: block;
+		}
+	}
+
+	&__title {
+		margin: 0;
+		font-size: rem(20);
+		text-transform: uppercase;
+	}
+
+	&__subtitle {
+		margin-top: 5px;
+		margin-bottom: 5px;
+		font-size: rem(16);
+	}
+
+	&__media {
+		max-width: 400px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 40px;
+		margin-bottom: 40px;
+
+		@media (min-width: 800px) {
+			margin-top: 45px;
+			margin-bottom: 45px;			
+		}
+	}
+
+	&__content {
+		@include clearfix;
+		max-width: 600px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	&__content-main p {
+		margin-top: 0;
+	}	
+}

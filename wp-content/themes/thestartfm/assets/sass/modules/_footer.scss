@@ -1,0 +1,76 @@
+/**
+ * Block: footer
+ * Element: footer__element
+ * Modifier: footer--modifier
+ */
+
+$block: footer;
+.footer {
+	@include clearfix;
+	max-width: 1300px;
+	margin-left: auto;
+	margin-right: auto;
+	
+	@media (min-width: 800px) {
+		margin-bottom: 5px;
+	}
+
+	&__group {
+		display: table;
+		margin-top: 10px;
+		margin-bottom: 10px;
+		margin-left: auto;
+		margin-right: auto;
+		font-size: rem(10);
+
+		@media (min-width: 800px) {
+			&:first-child {
+				float: left;
+			}
+
+			&:last-child {
+				float: right;
+			}
+		}
+	}
+
+	a {
+		text-transform: uppercase;
+	}
+
+	p {
+		margin: 0;
+	}
+
+	.social-list {
+		@media (max-width: 800px - 1px) {
+			display: table; 
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: 10px;
+		}
+
+		&__item {
+			margin-right: 5px;
+			margin-left: 5px;
+		}
+	}
+}
+
+.podcast-links {
+	@media (max-width: 800px - 1px) {
+		text-align: center;
+	}
+
+	@media (min-width: 800px - 1px) {
+		display: inline-block;
+	}
+
+	&__link {
+		margin-right: 5px;
+
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+}

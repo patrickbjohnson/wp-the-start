@@ -1,0 +1,105 @@
+/**
+ * Block: episodes
+ * Element: episodes__element
+ * Modifier: episodes--modifier
+ */
+
+$block: episode-grid;
+.episode-grid {
+
+	&__episode {
+		position: relative;
+		width: 100%;
+		margin-bottom: 25px;
+		background: skyblue;
+
+		@media (min-width: 600px) {
+			@include gallery(4 of 12);
+			margin-bottom: gutter(12); 
+		}
+
+		@media (min-width: 800px) {
+			&:hover {
+				
+				.#{$block}__episode-title {
+					color: darken($color-white, 5%);	
+				}
+
+				.media-wrap:after {
+					background: rgba(0, 0, 0, 0);
+				}
+			}
+		}
+		
+	}
+
+	&__episode-anchor {
+		position: relative;
+		display: block;
+	}
+	
+	&__episode-tile {
+		max-width: 100%;
+	}
+
+	&__episode-cover {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		padding: 10px;
+	}
+
+	&__episode-title {
+		margin: 0;
+		font-size: rem(26);
+		line-height: 1.250;
+    	letter-spacing: 0.02em;
+    	color: $color-white;
+	}
+
+	&__episode-meta {
+		position: absolute;
+		bottom: 15px;
+		margin-bottom: 0;
+		font-size: rem(12);
+		font-style: italic;
+		letter-spacing: 0.0125em;
+		color: $color-white;
+	}
+
+	&__episode-subtitle, 
+	&__episode-runtime {
+		font-size: rem(12);
+		display: inline-block;
+	}
+
+	&__episode-subtitle {
+		margin: 0;
+	}
+
+	&__episode-runtime {
+		&:before {
+			content: "\2022";
+			margin-left: 10px;
+		    margin-right: 10px;
+
+		}
+	}
+
+	.media-wrap {
+		position: relative;
+
+		&:after {
+			@include transition(background .250s ease-out);
+			content: "";
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			background: rgba(0, 0, 0, 0.25);
+		}
+	}
+}

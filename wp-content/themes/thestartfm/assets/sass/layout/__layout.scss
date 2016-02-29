@@ -1,0 +1,39 @@
+/*-----------------------------------------------------------------------------
+ *-----------------------------------------------------------------------------
+ *
+ * LAYOUT
+ * 
+ * Import all layout specific SASS files below. This file is imported 
+ * by main.scss.
+ *
+ *-----------------------------------------------------------------------------
+ *----------------------------------------------------------------------------- */
+ 
+ .grid {
+ 	@include clearfix;
+ 	max-width: $page-content-width;
+ 	margin-left: auto;
+ 	margin-right: auto;
+ }
+
+ .two-col-layout {
+ 	&__col {
+		float: left;
+ 	}
+
+	.single-episode__content-main {
+		@media (min-width: 800px) {
+			width: 65%;
+			margin-right: 5%;
+			text-align: right;
+		}
+	}
+
+	.single-episode__content-aside {
+		@media (min-width: 800px) {
+			width: 30%;
+			text-align: left;
+		}
+
+	}
+ }

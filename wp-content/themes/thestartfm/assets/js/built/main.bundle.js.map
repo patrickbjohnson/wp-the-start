@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///./assets/js/src/main.js"],"names":[],"mappings":";;;;AAAA,iB","file":"main.bundle.js","sourcesContent":["svg4everybody();\n\n\n/*****************\n ** WEBPACK FOOTER\n ** ./assets/js/src/main.js\n ** module id = 0\n ** module chunks = 0\n **/"],"sourceRoot":""}

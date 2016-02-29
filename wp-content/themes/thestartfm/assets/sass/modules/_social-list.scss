@@ -1,0 +1,55 @@
+/**
+ * Block: social-list
+ * Element: social-list__element
+ * Modifier: social-list--modifier
+ */
+
+$block: social-list;
+.social-list {
+	display: inline-block;
+	margin-left: 5px;
+	margin-right: 5px;
+
+	&__item {
+		display: inline-block;
+		vertical-align: bottom;
+	}
+
+	&__icon {
+		display: block;
+		width: 15px;
+		height: 15px;
+
+		&--website:hover {
+			color: $brand-website;
+		}
+
+		&--dribbble:hover {
+			color: $brand-dribbble;
+		}
+
+		&--facebook:hover {
+			color: $brand-facebook;
+		}
+
+		&--twitter:hover {
+			color: $brand-twitter;
+		}
+
+		&--snapchat:hover {
+			color: $brand-snapchat;
+		}
+
+		&--github:hover {
+			color: $brand-github;
+		}
+
+		&--instagram:hover {
+			color: $brand-instagram;
+		}
+
+		&--rss:hover {
+			color: $brand-rss;
+		}
+	}
+}

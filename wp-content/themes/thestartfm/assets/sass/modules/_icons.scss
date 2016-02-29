@@ -1,0 +1,7 @@
+.single-episode__header-links-icon {
+	@include transition(color .250s ease-out);
+	width: 20px;
+	height: 20px;
+	color: $color-black;
+	display: block;	
+}

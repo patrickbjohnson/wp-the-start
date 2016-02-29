@@ -1,0 +1,34 @@
+/**
+ * Block: menus
+ * Element: menus__element
+ * Modifier: menus--modifier
+ */
+
+$block: menus;
+.menu {
+	@extend .list-unstyled;
+
+
+	@media (max-width: 800px - 1px) {
+		text-align: center;
+		margin-top: 5px;
+		margin-bottom: 5px;
+	}
+
+	&-item {
+		display: inline-block;
+		margin-left: 5px;
+		margin-right: 5px;
+
+		@media (max-width: 800px - 1px) {
+			margin-top: 5px;
+			margin-bottom: 5px;
+		}
+	}
+}
+
+.site-menu {
+	@media (min-width: 800px) {
+		display: inline-block;
+	}
+}
